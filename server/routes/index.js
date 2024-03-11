@@ -9,6 +9,7 @@ const user = require("./user.route");
 const album = require("./album.route");
 
 router.use("/", main);
+
 router.use("/musician", musician);
 router.use("/playlist", playlist);
 router.use("/stones", stones);

@@ -23,7 +23,7 @@ exports.playlist_post = async (req, res, next) => {
       res.status(201).json({ message: "Ok" });
     } else if (isOk === 0) {
       res.status(200).json({ message: "Alreay Exist in your Playlist!!" });
-    } else if (isOk !== {}) {
+    } else if (isOk != {}) {
       res.status(201).json({ message: "Ok" });
     } else {
       res.status(500).json({ message: "Fail" });
